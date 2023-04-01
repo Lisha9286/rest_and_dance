@@ -189,6 +189,9 @@
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 1350px) {
+  .header {
+    overflow-x: hidden;
+  }
   .header__btn {
     margin-right: 70px;
   }
@@ -281,6 +284,7 @@
   top: 7144px;
   width: 100%;
   z-index: 7;
+  overflow-x: hidden;
 }
 .footer__body {
   background-color: rgba(0, 0, 0, 0.2);
@@ -813,9 +817,12 @@ template {
 }
 .club__closeBtn {
   position: absolute;
-  right: -80px;
-  top: -80px;
+  right: -41px;
+  top: -10px;
   z-index: 12;
+}
+.club__closeBtn_black {
+  display: none;
 }
 .club__closeBtn:hover {
   cursor: pointer;
@@ -831,8 +838,9 @@ template {
   position: relative;
   max-width: 1160px;
   background-color: rgb(255, 255, 255);
-  margin: 109px auto 180px;
+  margin: 80px auto 80px;
   z-index: 12;
+  width: 90%;
 }
 .club__title {
   width: 100%;
@@ -857,11 +865,10 @@ template {
   width: 100%;
 }
 .club__info {
-  width: 100%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 359px);
-  padding: 45px 0px 41px;
+  grid-template-columns: repeat(3, minmax(280px, 359px));
+  padding: 45px 40px 41px;
   max-width: 1079px;
 }
 .club__info_container {
@@ -884,7 +891,7 @@ template {
   max-width: 1066px;
   display: grid;
   grid-template-columns: 1fr 606px;
-  padding-bottom: 49px;
+  padding: 0 0 49px 40px;
 }
 .club__contact_info {
   background-color: rgba(97, 0, 255, 0.2);
@@ -930,9 +937,9 @@ template {
 }
 .club__form {
   background-color: rgb(171, 4, 250);
-  padding: 29px 0px 23px 26px;
+  padding: 29px 40px 23px 26px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 187px);
+  grid-template-columns: repeat(3, 187px);
   gap: 9px;
 }
 .club__form_btn {
@@ -964,6 +971,174 @@ template {
   visibility: hidden;
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .club__info {
+    grid-template-columns: repeat(3, minmax(280px, 359px));
+  }
+  .club__info_img img {
+    width: 60px;
+  }
+  .club__info_text {
+    left: 20px;
+    top: -5px;
+    font-size: 13px;
+  }
+  .club__contact {
+    padding-right: 40px;
+    grid-template: 95px 95px/1fr;
+  }
+  .club_info {
+    grid-row: 2/3;
+  }
+  .club__form {
+    grid-row: 1/2;
+  }
+}
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) and (min-width: 768px) {
+  .club__title {
+    display: flex;
+    font-size: 20px;
+    padding: 27px 0 22px;
+  }
+  .club__info {
+    grid-template-columns: repeat(3, minmax(217px, 359px));
+    padding: 17px 40px 38px;
+  }
+  .club__info_img img {
+    width: 60px;
+  }
+  .club__info_container {
+    display: block;
+  }
+  .club__info_text {
+    left: 0px;
+    top: 0px;
+    font-size: 13px;
+  }
+  .club__contact {
+    padding-right: 40px;
+    grid-template: 95px 95px/1fr;
+  }
+  .club__contact_info {
+    grid-row: 2/3;
+  }
+  .club__form {
+    grid-row: 1/2;
+    grid-template-columns: 187px 187px 1fr;
+  }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .club__closeBtn {
+    right: -11px;
+    top: -41px;
+  }
+  .club__closeBtn_white {
+    visibility: hidden;
+  }
+  .club__closeBtn_black {
+    display: block;
+  }
+  .club__title {
+    font-size: 14px;
+    padding: 27px 0 22px;
+    letter-spacing: 0;
+    padding: 9px 0 13px;
+  }
+  .club__container {
+    margin: 32px auto 47px;
+  }
+  .club__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+    padding: 17px 40px 17px;
+  }
+  .club__info_img img {
+    width: 60px;
+    margin-right: 20px;
+  }
+  .club__info_container {
+    display: flex;
+  }
+  .club__info_text {
+    left: 0px;
+    top: 0px;
+    font-size: 16px;
+  }
+  .club__contact {
+    padding-right: 40px;
+    grid-template: 1fr 95px/1fr;
+  }
+  .club__contact_info {
+    grid-row: 2/3;
+  }
+  .club__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .club__form_input {
+    width: 280px;
+  }
+  .club__form_btn {
+    padding: 12px 0 13px;
+  }
+}
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .club__title {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 245px;
+  }
+  .club__info {
+    padding: 17px 20px 17px;
+  }
+  .club__info_img img {
+    width: 60px;
+    margin-right: 20px;
+  }
+  .club__info_container {
+    display: flex;
+  }
+  .club__info_text {
+    left: 0px;
+    top: 0px;
+    font-size: 16px;
+  }
+  .club__contact {
+    padding: 20px;
+  }
+  .club__contact_logo {
+    margin-right: 13px;
+  }
+  .club__form {
+    padding: 18px 20px 17px;
+  }
+  .club__form_input {
+    width: auto;
+  }
+}
+@media (max-width: 360px) {
+  .club__contact {
+    padding: 8px;
+  }
+  .club__contact_logo {
+    font-size: 37px;
+    margin-right: 10px;
+  }
+  .club__contact_tel, .club__contact_email, .club__contact_workTime {
+    font-size: 11px;
+    letter-spacing: 0;
+  }
+  .club__form {
+    padding: 10px 10px 14px;
+  }
+  .club__form_input {
+    width: 70vw;
+  }
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1286,13 +1461,6 @@ body {
   max-width: 100%;
 }
 
-html {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  max-width: 100%;
-}
-
 button:focus, button:active {
   outline: none;
 }
@@ -1323,6 +1491,9 @@ input:active, :hover, :focus {
   outline-offset: 0;
 }
 
+.main {
+  overflow-x: hidden;
+}
 .main__wrapper {
   margin: 0 auto;
 }
@@ -1659,7 +1830,7 @@ input:active, :hover, :focus {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: top 0 right -2px, 100%;
-  height: 552px;
+  height: 575px;
 }
 .menu__fm {
   width: 353px;
@@ -1914,7 +2085,7 @@ input:active, :hover, :focus {
   font-size: 36px;
   z-index: 10;
   padding-bottom: 12px;
-  text-shadow: 0px 1px 0 rgb(255, 255, 255), 0px -1px 0 rgb(255, 255, 255), 1px 0px 0 rgb(255, 255, 255), -1px 0px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 2px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255);
+  text-shadow: 0px 1px 0 rgb(255, 255, 255), 0px -1px 0 rgb(255, 255, 255), 1px 0px 0 rgb(255, 255, 255), -1px 0px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255);
   -webkit-text-shadow: 0px 1px 0 rgb(255, 255, 255), 0px -1px 0 rgb(255, 255, 255), 1px 0px 0 rgb(255, 255, 255), -1px 0px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255);
   -moz-text-shadow: 0px 1px 0 rgb(255, 255, 255), 0px -1px 0 rgb(255, 255, 255), 1px 0px 0 rgb(255, 255, 255), -1px 0px 0 rgb(255, 255, 255), 1px 1px 0 rgb(255, 255, 255), 1px -1px 0 rgb(255, 255, 255), -1px 1px 0 rgb(255, 255, 255), -1px -1px 0 rgb(255, 255, 255);
 }
