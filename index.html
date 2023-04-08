@@ -584,28 +584,28 @@
             </div>
 
 
-            <div class="info">
+            <div class="info" id="animBoxInfo">
                 <div class="info__circle">
                     <div class="info__circle_center"></div>
                     <div class="info__circle_img"></div>
                 </div>
                 <div class="info__container _container">
-                    <div class="info__content">
-                        <div class="info__img"><img src="img/wine.svg" alt="" /></div>
-                        <div class="info__text">Свои напитки без сборов и доплат</div>
+                    <div class="info__content_drinks">
+                        <div class="info__img _anim_itemsInfo"><img src="img/wine.svg" alt="" /></div>
+                        <div class="info__text _anim_itemsInfo">Свои напитки без сборов и доплат</div>
                     </div>
-                    <div class="info__content">
-                        <div class="info__img"><img src="img/disco.svg" alt="" /></div>
-                        <div class="info__text">Бесплатная аренда площадки до 6 часов</div>
+                    <div class="info__content_time">
+                        <div class="info__img _anim_itemsInfo"><img src="img/disco.svg" alt="" /></div>
+                        <div class="info__text _anim_itemsInfo">Бесплатная аренда площадки до 6 часов</div>
                     </div>
-                    <div class="info__content">
-                        <div class="info__img"><img src="img/gift.svg" alt="" /></div>
-                        <div class="info__text">Нет сервисного
+                    <div class="info__content_money">
+                        <div class="info__img _anim_itemsInfo"><img src="img/gift.svg" alt="" /></div>
+                        <div class="info__text _anim_itemsInfo">Нет сервисного
                             сбора</div>
                     </div>
-                    <div class="info__content">
-                        <div class="info__img"><img src="img/karaoke.svg" alt="" /></div>
-                        <div class="info__text">Профессиональное
+                    <div class="info__content_sound">
+                        <div class="info__img _anim_itemsInfo"><img src="img/karaoke.svg" alt="" /></div>
+                        <div class="info__text _anim_itemsInfo">Профессиональное
                             световое и звуковое
                             оборудование</div>
                     </div>
@@ -641,47 +641,49 @@
                             154 • </span>
                     </div>
                 </div>
-                <div class="clubs__container">
-                    <div class="clubs__content clubs__content_ms">
-                        <div class="clubs__title">Москва</div>
-                        <div class="clubs__address">м. Звездная Дунайский пр. 21</div>
-                        <div class="clubs__info">Банкет от 80 персон Фуршет от 80 персон</div>
-                        <button class="clubs__btn" id="btnMsc">Празднуем здесь</button>
-                    </div>
+                <div class="clubs__container" id="slide">
+                    <div class="clubs__slider" id="slider__inner">
+                        <div class="clubs__content clubs__content_ms">
+                            <div class="clubs__title">Москва</div>
+                            <div class="clubs__address">м. Звездная Дунайский пр. 21</div>
+                            <div class="clubs__info">Банкет от 80 персон Фуршет от 80 персон</div>
+                            <button class="clubs__btn" id="btnMsc">Празднуем здесь</button>
+                        </div>
 
-                    <div class="clubs__content clubs__content_fb">
-                        <div class="clubs__title">Фабрика</div>
-                        <div class="clubs__address">м. Ладожская Заневский пр. 38</div>
-                        <div class="clubs__info">Банкет от 60 персон Фуршет от 70 персон</div>
-                        <button class="clubs__btn" id="btnFbk">Празднуем здесь</button>
-                    </div>
+                        <div class="clubs__content clubs__content_fb">
+                            <div class="clubs__title">Фабрика</div>
+                            <div class="clubs__address">м. Ладожская Заневский пр. 38</div>
+                            <div class="clubs__info">Банкет от 60 персон Фуршет от 70 персон</div>
+                            <button class="clubs__btn" id="btnFbk">Празднуем здесь</button>
+                        </div>
 
-                    <div class="clubs__content clubs__content_gg">
-                        <div class="clubs__title">Gagarin</div>
-                        <div class="clubs__address">м. Комендантский пр. Пр. Испытателей 37</div>
-                        <div class="clubs__info">Банкет от 80 персон Фуршет от 250 персон</div>
-                        <button class="clubs__btn" id="btnGG">Празднуем здесь</button>
-                    </div>
+                        <div class="clubs__content clubs__content_gg">
+                            <div class="clubs__title">Gagarin</div>
+                            <div class="clubs__address">м. Комендантский пр. Пр. Испытателей 37</div>
+                            <div class="clubs__info">Банкет от 80 персон Фуршет от 250 персон</div>
+                            <button class="clubs__btn" id="btnGG">Празднуем здесь</button>
+                        </div>
 
-                    <div class="clubs__content clubs__content_154">
-                        <div class="clubs__title">154</div>
-                        <div class="clubs__address">м. пр. Просвещения Пр. Энгельса 154</div>
-                        <div class="clubs__info">Банкет от 60 персон Фуршет от 70 персон</div>
-                        <button class="clubs__btn" id="btn154">Празднуем здесь</button>
-                    </div>
+                        <div class="clubs__content clubs__content_154">
+                            <div class="clubs__title">154</div>
+                            <div class="clubs__address">м. пр. Просвещения Пр. Энгельса 154</div>
+                            <div class="clubs__info">Банкет от 60 персон Фуршет от 70 персон</div>
+                            <button class="clubs__btn" id="btn154">Празднуем здесь</button>
+                        </div>
 
-                    <div class="clubs__content clubs__content_msk">
-                        <div class="clubs__title">Караоке Москва</div>
-                        <div class="clubs__address">м. Комендантский пр. Пр. Испытателей 37</div>
-                        <div class="clubs__info">Банкет от 80 персон Фуршет от 250 персон</div>
-                        <button class="clubs__btn" id="btnMK">Празднуем здесь</button>
-                    </div>
+                        <div class="clubs__content clubs__content_msk">
+                            <div class="clubs__title">Караоке Москва</div>
+                            <div class="clubs__address">м. Комендантский пр. Пр. Испытателей 37</div>
+                            <div class="clubs__info">Банкет от 80 персон Фуршет от 250 персон</div>
+                            <button class="clubs__btn" id="btnMK">Празднуем здесь</button>
+                        </div>
 
-                    <div class="clubs__content clubs__content_fbk">
-                        <div class="clubs__title">Караоке Фабрика</div>
-                        <div class="clubs__address">м. Комендантский пр. Пр. Испытателей 37</div>
-                        <div class="clubs__info">Банкет от 80 персон Фуршет от 250 персон</div>
-                        <button class="clubs__btn" id="btnFK">Празднуем здесь</button>
+                        <div class="clubs__content clubs__content_fbk">
+                            <div class="clubs__title">Караоке Фабрика</div>
+                            <div class="clubs__address">м. Комендантский пр. Пр. Испытателей 37</div>
+                            <div class="clubs__info">Банкет от 80 персон Фуршет от 250 персон</div>
+                            <button class="clubs__btn" id="btnFK">Празднуем здесь</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -794,7 +796,7 @@
                 </div>
             </div>
 
-            <div class="list">
+            <div class="list" id="animBoxList">
                 <div class="list__marquee marqueeLeft">
                     <div>
                         <span> техническое оснащение техническое оснащение техническое оснащениет
@@ -823,32 +825,32 @@
 
                     <ul class="list__ul">
                         <li class="list__li">
-                            <span class="list__icon _iconSuccess"></span>
+                            <span class="list__icon _iconSuccess _anim_itemsList _1"></span>
                             <span class="list__text">Профессиональный звук, пульт,
                                 микрофоны</span>
                         </li>
                         <li class="list__li">
-                            <span class="list__icon _iconSuccess"></span>
+                            <span class="list__icon _iconSuccess _anim_itemsList _2"></span>
                             <span class="list__text">Караоке-система</span>
                         </li>
                         <li class="list__li">
-                            <span class="list__icon _iconSuccess"></span>
+                            <span class="list__icon _iconSuccess _anim_itemsList _3"></span>
                             <span class="list__text">Профессиональное световое оборудование</span>
                         </li>
                         <li class="list__li">
-                            <span class="list__icon _iconSuccess"></span>
+                            <span class="list__icon _iconSuccess _anim_itemsList _4"></span>
                             <span class="list__text">Светодиодная сцена</span>
                         </li>
                         <li class="list__li">
-                            <span class="list__icon _iconSuccess"></span>
+                            <span class="list__icon _iconSuccess _anim_itemsList _5"></span>
                             <span class="list__text">Световая DJ-стойка</span>
                         </li>
                         <li class="list__li">
-                            <span class="list__icon _iconSuccess"></span>
+                            <span class="list__icon _iconSuccess _anim_itemsList _6"></span>
                             <span class="list__text">Плазменные панели</span>
                         </li>
                         <li class="list__li">
-                            <span class="list__icon _iconSuccess"></span>
+                            <span class="list__icon _iconSuccess _anim_itemsList _7"></span>
                             <span class="list__text">Online-трансляция сцены</span>
                         </li>
                     </ul>
@@ -857,27 +859,27 @@
 
                     <ul class="list__ul">
                         <li class="list__li">
-                            <span class="list__icon _iconSuccess"></span>
+                            <span class="list__icon _iconSuccess _anim_itemsList _1"></span>
                             <span class="list__text">Танцпол</span>
                         </li>
                         <li class="list__li">
-                            <span class="list__icon _iconSuccess"></span>
+                            <span class="list__icon _iconSuccess _anim_itemsList _2"></span>
                             <span class="list__text">Дым-машина</span>
                         </li>
                         <li class="list__li">
-                            <span class="list__icon _iconSuccess"></span>
+                            <span class="list__icon _iconSuccess _anim_itemsList _3"></span>
                             <span class="list__text">Кондиционер</span>
                         </li>
                         <li class="list__li">
-                            <span class="list__icon _iconSuccess"></span>
+                            <span class="list__icon _iconSuccess _anim_itemsList _4"></span>
                             <span class="list__text">Гардероб</span>
                         </li>
                         <li class="list__li">
-                            <span class="list__icon _iconSuccess"></span>
+                            <span class="list__icon _iconSuccess _anim_itemsList _5"></span>
                             <span class="list__text">Система дымоудаления</span>
                         </li>
                         <li class="list__li">
-                            <span class="list__icon _iconSuccess"></span>
+                            <span class="list__icon _iconSuccess _anim_itemsList _6"></span>
                             <span class="list__text">Wi-Fi</span>
                         </li>
                     </ul>
@@ -997,7 +999,7 @@
                 </div>
             </div>
 
-            <div class="contact">
+            <div class="contact" id="animBoxContact">
                 <div class="contact__marquee marqueeLeft">
                     <div>
                         <span>party / dance / music /party / dance / music /party / dance / music
@@ -1026,7 +1028,10 @@
                 </div>
                 <div class="contact__background">
                     <div class="_container">
-                        <div class="contact__title">Менеджер расскажет больше</div>
+                        <div class="contact__title">
+                            <div class="_anim_itemsContact">Менеджер </div>
+                            <div class="_anim_itemsContact">расскажет больше</div>
+                        </div>
                         <div class="contact__container">
                             <div class="contact__card card">
                                 <div class="card__manager">

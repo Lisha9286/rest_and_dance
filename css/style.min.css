@@ -1456,11 +1456,6 @@ input:active, :hover, :focus {
     transform: rotate(360deg);
   }
 }
-._active {
-  transform: translate(0, 0);
-  opacity: 1;
-}
-
 .banner {
   background-image: linear-gradient(rgba(52, 17, 153, 0.9), rgba(52, 17, 153, 0.9)), url("../img/dance_floor.jpg");
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -1622,6 +1617,78 @@ input:active, :hover, :focus {
   line-height: 34px;
   white-space: normal;
 }
+.info__content_drinks .info__img {
+  transform: translate(0px, 200%);
+  opacity: 0;
+}
+.info__content_drinks .info__text {
+  transform: translate(0px, 200%);
+  opacity: 0;
+}
+.info__content_drinks .info__img._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.8s;
+}
+.info__content_drinks .info__text._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.9s ease 0.8s;
+}
+.info__content_time .info__img {
+  transform: translate(0px, 200%);
+  opacity: 0;
+}
+.info__content_time .info__text {
+  transform: translate(0px, 200%);
+  opacity: 0;
+}
+.info__content_time .info__img._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 1s ease 0.8s;
+}
+.info__content_time .info__text._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 1.1s ease 0.8s;
+}
+.info__content_money .info__img {
+  transform: translate(0px, 200%);
+  opacity: 0;
+}
+.info__content_money .info__text {
+  transform: translate(0px, 200%);
+  opacity: 0;
+}
+.info__content_money .info__img._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 1.2s ease 0.8s;
+}
+.info__content_money .info__text._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 1.3s ease 0.8s;
+}
+.info__content_sound .info__img {
+  transform: translate(0px, 200%);
+  opacity: 0;
+}
+.info__content_sound .info__text {
+  transform: translate(0px, 200%);
+  opacity: 0;
+}
+.info__content_sound .info__img._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 1.4s ease 0.8s;
+}
+.info__content_sound .info__text._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 1.5s ease 0.8s;
+}
 .info__img {
   margin-bottom: 35px;
 }
@@ -1632,10 +1699,10 @@ input:active, :hover, :focus {
   z-index: 3;
   transform: rotate(-5.58deg);
   right: 20px;
-  width: 110%;
+  width: 2800px;
   min-width: 1130px;
   margin: 0 auto;
-  padding: 98px 0 205px 131px;
+  padding: 98px 0 225px 0;
 }
 .clubs__marquee {
   position: absolute;
@@ -1658,24 +1725,39 @@ input:active, :hover, :focus {
 .clubs__container {
   position: relative;
   bottom: 83px;
-  left: 206px;
-  width: 1800px;
   height: 675px;
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+  width: 2000px;
   clip-path: polygon(0% 27%, 100% 0, 100% 100%, 0% 90%);
-  transform: rotate(5.58deg);
+  transform: rotate(5.58deg) scale(1, 1);
+  cursor: grab;
+  right: 400px;
+  margin: 0 auto;
 }
 .clubs__container :nth-child(5), .clubs__container :nth-child(6) {
   padding-top: 356px;
+}
+.clubs__slider {
+  position: relative;
+  margin: 0 auto;
+  width: 1800px;
+  display: flex;
+  margin-left: 131px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  user-select: none;
+  bottom: 83px;
+}
+.clubs__container:active {
+  cursor: grabbing;
 }
 .clubs__content {
   white-space: normal;
   width: 242px;
   padding: 415px 0 153px 19px;
+  position: relative;
+  flex: none;
+  position: relative;
 }
 .clubs__content_ms {
   background-image: url("../img/cm.png");
@@ -1950,6 +2032,45 @@ input:active, :hover, :focus {
   position: relative;
   top: 14px;
 }
+.list__icon._anim_itemsList {
+  transform: translate(0px, 100%);
+  opacity: 0;
+}
+.list__icon._active._1 {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.5s ease 0.8s;
+}
+.list__icon._active._2 {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.5s ease 1.1s;
+}
+.list__icon._active._3 {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.5s ease 1.3s;
+}
+.list__icon._active._4 {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.5s ease 1.6s;
+}
+.list__icon._active._5 {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.5s ease 1.9s;
+}
+.list__icon._active._6 {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.5s ease 2.2s;
+}
+.list__icon._active._7 {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.5s ease 2.5s;
+}
 .list__li {
   display: flex;
   justify-content: flex-start;
@@ -2067,6 +2188,24 @@ input:active, :hover, :focus {
   width: 686px;
   line-height: 127.3%;
   margin: 108px 0 84px 0;
+}
+.contact__title :first-child {
+  transform: translate(0px, 200%);
+  opacity: 0;
+}
+.contact__title :first-child._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 1.5s ease 0.8s;
+}
+.contact__title :last-child {
+  transform: translate(0px, 200%);
+  opacity: 0;
+}
+.contact__title :last-child._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 1.5s ease 1s;
 }
 .contact__container {
   margin-left: 3px;
@@ -2341,6 +2480,10 @@ input:active, :hover, :focus {
   }
   .list__ul {
     width: 100%;
+  }
+  .list__icon._anim_itemsList {
+    transform: translate(0px, 0px);
+    opacity: 1;
   }
   .extra {
     right: 80px;
@@ -2626,6 +2769,10 @@ input:active, :hover, :focus {
     align-items: flex-start;
     margin-bottom: 10px;
   }
+  .list__icon._anim_itemsList {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
   .extra {
     right: 80px;
     padding: 91px 20px 200px 0;
@@ -2669,6 +2816,14 @@ input:active, :hover, :focus {
     margin-left: 3px;
     display: block;
     width: 100%;
+  }
+  .contact__title :first-child {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  .contact__title :last-child {
+    transform: translate(0px, 0px);
+    opacity: 1;
   }
   .card {
     display: grid;
